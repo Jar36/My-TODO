@@ -1,0 +1,38 @@
+<div class="container" id="todo-list">
+    <div class="jumbotron">
+        <h1 id="header">Get'er done...</h1>
+        <h2 class="sub-head">a simple todo list <i class="fa fa-list-alt" aria-hidden="true"></i> </h2>
+    </div>
+
+
+    <div class="row">
+        <div class="col-sm-2"></div>
+        
+        <div class="col-sm-6">
+            <%= form_with scope: :list, url: lists_path do |f| %>
+                <div class="input-group">
+                    <%= f.text_field :item, placeholder: "New item...", class: "form-control" %>
+                    <span class="input-group-btn">
+                        <%= f.button "Add", class: "btn btn-secondary" %>
+                    </span>
+                </div>
+            <% end %>
+            
+            <h2 class="sub-head">Your list</h2>
+            <hr class="my-4" />
+            <ul class="list-group">
+                <% @lists.each do |list| %>
+                    <li class="list-group-item list-group-item-secondary">
+                        <i class="fa fa-check" aria-hidden="true"></i> <%= list.item %>
+                        <%= link_to ('<i class="fa fa-trash pull-right" aria-hidden="true"></i>').html_safe, list, method: :delete %>
+                    </li>
+                <% end %>
+            </ul>
+        
+            <div class="col-sm-2"></div>
+        </div>
+    </div>
+</div>
+
+
+
