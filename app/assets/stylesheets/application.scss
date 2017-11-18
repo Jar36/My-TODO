@@ -15,11 +15,24 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import "font-awesome";
-
-
+@import url('https://fonts.googleapis.com/css?family=Crafty+Girls|Zilla+Slab+Highlight');
 
 body {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Crafty Girls', cursive;
     color:#38353A;
+    font-size: 2em;
 }
+
+.list-group-item {
+    position: relative;
+    display: block;
+    // padding: 10px 15px;
+    margin-bottom: 0px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+input.form-control {
+    font-size: 1em;
+}
+

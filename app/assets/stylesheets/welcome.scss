@@ -1,20 +1,24 @@
 // Place all the styles related to the Welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import url('https://fonts.googleapis.com/css?family=Crafty+Girls');
 #todo-list{
     margin-top: 20px;
 }
 
 #header {
-    font-family: 'Special Elite', cursive;
+    font-family: 'Zilla Slab Highlight', cursive;
     color: #B75922;
 }
 
 .sub-head {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Zilla Slab Highlight', cursive;
     color:#546E87;
+    
 }
 
 .l-item {
     color: #38353A;
 }
+

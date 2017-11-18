@@ -2388,3 +2388,813 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 30ms (Views: 27.9ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/" for 71.237.100.252 at 2017-11-16 00:46:48 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 348ms (Views: 325.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-16 00:46:49 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 75ms (Views: 72.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/lists" for 71.237.100.252 at 2017-11-16 00:52:45 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ListsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hWPcoKKDwxj9BjBWJUouR7Z15AJ/zllZyQEw8Sbr0wBfhQ/HiEpyakMAaruxjLONGCbUcsgGz99wrHcdG2L1xw==", "list"=>{"item"=>"Clean your room"}, "button"=>""}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "lists" ("item", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["item", "Clean your room"], ["created_at", "2017-11-16 00:52:45.169356"], ["updated_at", "2017-11-16 00:52:45.169356"]]
+  [1m[35m (8.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://my-todo-jar37.c9users.io/
+Completed 200 OK in 14ms (ActiveRecord: 9.2ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-16 00:52:45 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 107ms (Views: 105.0ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/lists/8" for 71.237.100.252 at 2017-11-16 00:52:49 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ListsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"wxGOI9CYXZgxg46FfH22JhbTSiGZGnP1VIbwwpYr4yQZ911E+lHs6o+F1GjouyvsuIB6US7S5XPtK7cuq6LF4w==", "id"=>"8"}
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "lists" WHERE "lists"."id" = ?[0m  [["id", 8]]
+  [1m[35m (13.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://my-todo-jar37.c9users.io/
+Completed 302 Found in 24ms (ActiveRecord: 14.1ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-16 00:52:49 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 61ms (Views: 58.9ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/lists/7" for 71.237.100.252 at 2017-11-16 00:52:50 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ListsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ct7I10wbbxz8hVYRkYdyCz/5KrUGPQTCjEjNrYbKsxyoOBuwZtLebkKDDPwFQe/BkaoaxbH1kkQ15YpBu0OV2w==", "id"=>"7"}
+  [1m[36mList Load (0.7ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[31mDELETE FROM "lists" WHERE "lists"."id" = ?[0m  [["id", 7]]
+  [1m[35m (8.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://my-todo-jar37.c9users.io/
+Completed 302 Found in 15ms (ActiveRecord: 10.2ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-16 00:52:50 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (104.4ms)
+Completed 200 OK in 157ms (Views: 155.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 06:58:50 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 363ms (Views: 347.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 06:58:51 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 31ms (Views: 29.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/lists" for 71.237.100.252 at 2017-11-17 07:02:50 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ListsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b5KHrlTZ8gcff0IuCgCCgUNs4/SfMCKLY8YczINddmO1dFTJfhBDdaF5GMOexh9L7T/ThCj4tA3aa1sgvtRQpA==", "list"=>{"item"=>"GO to the store"}, "button"=>""}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "lists" ("item", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["item", "GO to the store"], ["created_at", "2017-11-17 07:02:50.710404"], ["updated_at", "2017-11-17 07:02:50.710404"]]
+  [1m[35m (8.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://my-todo-jar37.c9users.io/
+Completed 200 OK in 19ms (ActiveRecord: 9.0ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 07:02:50 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 62ms (Views: 60.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 07:10:36 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 44ms (Views: 41.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 07:11:13 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 45ms (Views: 43.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 07:11:43 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 54ms (Views: 53.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 07:12:12 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 54ms (Views: 52.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 07:13:44 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 66ms (Views: 64.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 07:15:06 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (312.6ms)
+Completed 500 Internal Server Error in 318ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x00000003af9df0>:0x007f12481b8c10>):
+    29:                       
+    30:                       <input type="text" class="form-control" aria-label="...">
+    31:                       <span class="input-group-btn">
+    32:                         <%= f.button "Add", class: "btn btn-secondary" %>
+    33:                     </span>
+    34:                     </div><!-- /input-group -->
+    35:                     <li class="list-group-item list-group-item-secondary">
+  
+app/views/welcome/index.html.erb:32:in `block in _app_views_welcome_index_html_erb__1443718777712243708_69858247953140'
+app/views/welcome/index.html.erb:24:in `_app_views_welcome_index_html_erb__1443718777712243708_69858247953140'
+Started GET "/" for 71.237.100.252 at 2017-11-17 07:16:35 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 42ms (Views: 39.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 07:18:05 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 37ms (Views: 35.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 07:19:51 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 54ms (Views: 52.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 07:20:26 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 55ms (Views: 53.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 07:22:02 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 66ms (Views: 64.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 07:22:56 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 47ms (Views: 45.7ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/lists/9" for 71.237.100.252 at 2017-11-17 07:23:03 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ListsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"K818rGRneAfT7q6xQMjwSEn0azzZSldwHMNR3Ss6eMPxK6/LTq7JdW3o9FzUDm2C56dbTG6CwfalbhYxFrNeBA==", "id"=>"9"}
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[31mDELETE FROM "lists" WHERE "lists"."id" = ?[0m  [["id", 9]]
+  [1m[35m (12.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://my-todo-jar37.c9users.io/
+Completed 302 Found in 20ms (ActiveRecord: 14.2ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 07:23:03 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 62ms (Views: 60.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/lists" for 71.237.100.252 at 2017-11-17 07:23:13 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ListsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WjdL00xLNV4rLWCZvyLtKcIRR6cLn7fMynROPWkbgzmA0Zi0ZoKELJUrOnQr5HDjbEJ317xXIUpz2QnRVJKl/g==", "list"=>{"item"=>"Take out the trash"}, "button"=>""}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "lists" ("item", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["item", "Take out the trash"], ["created_at", "2017-11-17 07:23:13.772140"], ["updated_at", "2017-11-17 07:23:13.772140"]]
+  [1m[35m (9.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://my-todo-jar37.c9users.io/
+Completed 200 OK in 14ms (ActiveRecord: 10.0ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 07:23:13 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 62ms (Views: 60.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 07:23:33 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 35ms (Views: 33.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 07:25:00 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 41ms (Views: 39.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 07:28:12 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 2105ms (Views: 2103.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 07:28:45 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 1687ms (Views: 1685.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 07:31:17 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 41ms (Views: 39.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 07:33:32 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 33ms (Views: 31.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 07:34:19 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 37ms (Views: 35.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 07:35:33 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE List Load (0.0ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE List Load (0.0ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE List Load (0.0ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE List Load (0.0ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE List Load (0.0ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE List Load (0.0ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE List Load (0.0ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered welcome/index.html.erb within layouts/application (304.1ms)
+Completed 500 Internal Server Error in 307ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `list' for #<#<Class:0x00000003af9df0>:0x007f124969fbd8>
+Did you mean?  @lists):
+    13:                 <div class="input-group">
+    14:                     <%= f.text_field :item, placeholder: "New item...", class: "form-control" %>
+    15:                     <span class="input-group-btn">
+    16:                         <%= f.button ('<i class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></i>').html_safe, list, class: "btn btn-secondary" %>
+    17:                     </span>
+    18:                 </div>
+    19:             <% end %>
+  
+app/views/welcome/index.html.erb:16:in `block in _app_views_welcome_index_html_erb__1443718777712243708_69858258919620'
+app/views/welcome/index.html.erb:12:in `_app_views_welcome_index_html_erb__1443718777712243708_69858258919620'
+Started GET "/" for 71.237.100.252 at 2017-11-17 07:36:28 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 31ms (Views: 29.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 07:36:31 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 33ms (Views: 31.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 07:36:55 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 32ms (Views: 30.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 07:37:12 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 32ms (Views: 30.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 07:38:04 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (12.6ms)
+Completed 500 Internal Server Error in 821ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: font-awesome.
+Load paths:
+  /home/ubuntu/workspace/app/assets/config
+  /home/ubuntu/workspace/app/assets/images
+  /home/ubuntu/workspace/app/assets/javascripts
+  /home/ubuntu/workspace/app/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /usr/local/rvm/gems/ruby-2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /usr/local/rvm/gems/ruby-2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /home/ubuntu/workspace/node_modules
+  /usr/local/rvm/gems/ruby-2.4.0/gems/bootstrap-sass-3.3.7/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.4.0/gems/bootstrap-sass-3.3.7/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/bootstrap-sass-3.3.7/assets/fonts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/bootstrap-sass-3.3.7/assets/images
+  /usr/local/rvm/gems/ruby-2.4.0/gems/bootstrap-sass-3.3.7/assets/stylesheets):
+    4:     <title>Todo</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:     <%= stylesheet_link_tag 'application', 'https://fonts.googleapis.com/css?family=Oswald|Special+Elite', media: 'all', 'data-turbolinks-track' => true %>
+   10:   </head>
+  
+app/assets/stylesheets/application.scss:19
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___3383616755244545600_30690680'
+Started GET "/" for 71.237.100.252 at 2017-11-17 07:38:22 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 1487ms (Views: 1485.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 07:44:25 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 35ms (Views: 32.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 07:46:16 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 30ms (Views: 28.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 07:50:28 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.5ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 43ms (Views: 40.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 07:51:24 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 1292ms (Views: 1290.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 07:55:40 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 1435ms (Views: 1433.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 07:56:18 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 37ms (Views: 36.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 07:58:12 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 42ms (Views: 40.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 07:58:44 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 1518ms (Views: 1516.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 07:59:21 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 1536ms (Views: 1533.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 07:59:50 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 1428ms (Views: 1426.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 08:01:04 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 32ms (Views: 30.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 08:04:03 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 32ms (Views: 30.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 08:04:20 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 31ms (Views: 29.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 08:05:02 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 30ms (Views: 28.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 08:05:38 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 32ms (Views: 30.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 08:06:37 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 28ms (Views: 26.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 08:07:07 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 29ms (Views: 27.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 08:07:45 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 1296ms (Views: 1294.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 08:11:04 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 1330ms (Views: 1328.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 08:14:43 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 1397ms (Views: 1395.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 08:15:20 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 1319ms (Views: 1318.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 08:15:40 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 1383ms (Views: 1381.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 08:16:51 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 1334ms (Views: 1332.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 08:17:07 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 1319ms (Views: 1317.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 08:18:27 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 1364ms (Views: 1362.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 08:18:51 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 42ms (Views: 40.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 08:19:28 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 46ms (Views: 43.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 08:23:15 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 1555ms (Views: 1553.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 08:27:17 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (84.7ms)
+Completed 200 OK in 1552ms (Views: 1549.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 08:27:58 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 1427ms (Views: 1425.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 08:29:05 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 1405ms (Views: 1403.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 08:29:36 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 1466ms (Views: 1464.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 08:30:19 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 30ms (Views: 28.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 08:31:04 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 31ms (Views: 29.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 08:31:48 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 33ms (Views: 31.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/lists" for 71.237.100.252 at 2017-11-17 08:32:24 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ListsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jTw8BSVo033j2oVszjjl+QMXh6wuE62we0FoWFOGdWhX2u9iD6FiD13c34Fa/ngzrUS33JnbOzbC7C+0bg9Trw==", "list"=>{"item"=>"Take a dump"}, "button"=>""}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.4ms)[0m  [1m[32mINSERT INTO "lists" ("item", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["item", "Take a dump"], ["created_at", "2017-11-17 08:32:24.546697"], ["updated_at", "2017-11-17 08:32:24.546697"]]
+  [1m[35m (9.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://my-todo-jar37.c9users.io/
+Completed 200 OK in 17ms (ActiveRecord: 12.1ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 08:32:24 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 65ms (Views: 27.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/lists" for 71.237.100.252 at 2017-11-17 08:32:32 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ListsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UT7WH5CjxxLaJhPSnn2aG5FzXAMEugQbG1xDmOApCsAIAIm+Yvd2SYLSTect7cs1J5FRUxySIa8UAVXSwlQUCw==", "list"=>{"item"=>"Get gas "}, "button"=>""}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "lists" ("item", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["item", "Get gas "], ["created_at", "2017-11-17 08:32:32.194804"], ["updated_at", "2017-11-17 08:32:32.194804"]]
+  [1m[35m (10.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://my-todo-jar37.c9users.io/
+Completed 200 OK in 16ms (ActiveRecord: 11.8ms)
+
+
+Started GET "/" for 71.237.100.252 at 2017-11-17 08:32:32 +0000
+Cannot render console from 71.237.100.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 28ms (Views: 26.4ms | ActiveRecord: 0.3ms)
+
+
