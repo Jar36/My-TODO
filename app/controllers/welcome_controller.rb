@@ -1,5 +1,6 @@
 class WelcomeController < ApplicationController
+ # before_action :authenticate_user!
   def index
-    @lists = List.all
+   
   end
 end

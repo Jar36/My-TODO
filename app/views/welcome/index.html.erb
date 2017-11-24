@@ -1,37 +1,4 @@
-<div class="container" id="todo-list">
-    <div class="jumbotron">
-        <h1 id="header">Get'er done...</h1>
-        <h2 class="sub-head">a simple todo list </h2>
-    </div>
-
-
-    <div class="row">
-        <div class="col-md-3"></div>
-        <div class="col-sm-6">
-            <%= form_with scope: :list, url: lists_path do |f| %>
-                <div class="input-group">
-                    <%= f.text_field :item, placeholder: "enter a new item...", class: "form-control" %>
-                    <span class="input-group-btn">
-                        <%= f.button "Add", class: "btn btn-secondary" %>
-                    </span>
-                </div>
-            <% end %>
-            
-            <h2 class="sub-head text-center">My list:</h2>
-            <hr/>
-            <ul class="list-group">
-                <% @lists.each do |list| %>
-                    <div class="input-group list-group">
-                      <span class="input-group-addon"><input type="checkbox" aria-label="..."></span>
-                      <li class="list-group-item list-group-item-secondary"><%= list.item %></li>
-                      <span class="input-group-addon"><%= link_to ('<i class="glyphicon glyphicon-trash pull-right" style="color: #9E1111;"aria-hidden="true"></i>').html_safe, list, method: :delete %></span>
-                    </div>
-                <% end %>
-            </ul>
-        </div>
-        <div class="col-md-3"></div>
-    </div>
-</div>
+<h1>Hello</h1>
 
 
 

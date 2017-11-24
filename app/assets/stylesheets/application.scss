@@ -13,14 +13,14 @@
  *= require_tree .
  *= require_self
  */
-@import "bootstrap-sprockets";
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Crafty+Girls|Zilla+Slab+Highlight');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 body {
     font-family: 'Crafty Girls', cursive;
     color:#38353A;
-    font-size: 2em;
+    
 }
 
 .list-group-item {
@@ -33,6 +33,10 @@ body {
 }
 
 input.form-control {
-    font-size: 1em;
+   
+}
+
+nav {
+    font-family: 'Open Sans', sans-serif;
 }
 
